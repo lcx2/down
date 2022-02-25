@@ -1,7 +1,7 @@
 #!/bin/bash
 
 jarFile='bin/xx-manager-1.0.0.jar'
-profileActive="$1"
+profileActive="$2"
 
 start() {
 	echo `pwd`" starting..."
@@ -38,13 +38,13 @@ stop() {
 	fi
 }
 
-case "$2" in
+case "$1" in
 	start)
-		$2
+		$1
 		exit 0
 		;;
 	stop)
-		$2
+		$1
 		exit 0
 		;;
 	*)
