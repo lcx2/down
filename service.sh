@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jarFile='bin/xx-manager-1.0.0.jar'
+jarFile='bin/server.jar'
 profileActive="$2"
 
 start() {
@@ -48,8 +48,8 @@ case "$1" in
 		exit 0
 		;;
 	*)
-		echo 'Usage: cmd name start|stop'
-		echo 'service.sh dev start'
+		echo 'Usage: cmd start|stop dev|prod'
+		echo 'service.sh start dev'
 		exit 0
 		;;
 esac
