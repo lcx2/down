@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jarFile='./bin/ug-manager-xstarter-1.0.0.jar'
+jarFile='bin/xx-manager-1.0.0.jar'
 profileActive="$1"
 
 start() {
